@@ -1,0 +1,27 @@
+table {
+  font-size: 16px;
+  border: solid #ddd;
+  border-width: 0 0 1px 1px;
+}
+th, td {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-width: 1px 1px 0 0;
+}
+td {
+  text-align: right;
+  font-family: monospace;
+}
+
+#rate {
+  font-size: 12px;
+  font-weight: normal;
+  vertical-align: bottom;
+}
+#rate::before {
+  content: '（';
+  margin-left: 0.1em;
+}
+#rate::after {
+  content: '）'
+}
