@@ -1,23 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+body {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
 .form {
   padding: 0 0 16px;
 }
-
 table {
-  font-size: 16px;
   border: solid #ddd;
   border-width: 0 0 1px 1px;
 }
 th, td {
-  padding: 8px;
+  padding: 8px 16px;
   border: 1px solid #ddd;
   border-width: 1px 1px 0 0;
 }
+th {
+  background: #eee;
+}
+th:first-of-type {
+  font-family: 'Source Code Pro', monospace;
+  font-weight: normal;
+}
 td {
   text-align: right;
-  font-family: monospace;
+  font-family: 'Source Code Pro', monospace;
 }
-
+input[type="text"] {
+  padding: 0 8px;
+  font-size: 14px;
+  line-height: 22px;
+  border-radius: 3px;
+  border: 1px solid #aaa;
+  outline: 0;
+  font-family: 'Source Code Pro', monospace;
+}
 #rate-number {
+  font-family: 'Source Code Pro', monospace;
   font-size: 12px;
   font-weight: normal;
   vertical-align: bottom;
