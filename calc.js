@@ -20,6 +20,7 @@ calc();
 
 function calc () {
   const days = 100;
+  const quata_pips = 30
   const capital = Number(inputCapital.value);
   const benefit_ratio = Number(inputRate.value);
   const render = renderer(tbodyElement, rateElement, benefit_ratio); 
@@ -28,7 +29,7 @@ function calc () {
   [...Array(days)].reduce((capital, total) => {
     total = total || capital;
     benefit = Math.round(total * benefit_ratio);
-    lot = benefit / (30 * 1000);
+    lot = benefit / (quata_pips * 1000);
     render(++i, total, benefit, lot);
     return total + benefit;
   }, capital);
