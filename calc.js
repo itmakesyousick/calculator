@@ -35,7 +35,7 @@ function calc () {
 }
 
 function renderer (tbodyElement, rateContainer, benefit_ratio) {
-	tbodyElement.innerHTML = '';
+  tbodyElement.innerHTML = '';
   rateElement.textContent = (benefit_ratio * 100) + '%';
 
   return (index, total, benefit, lot) => {
