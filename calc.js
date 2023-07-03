@@ -29,7 +29,7 @@ function calc () {
     total = total || capital;
     benefit = Math.round(total * benefit_ratio);
     lot = benefit / (30 * 1000);
-    render(i++, total, benefit, lot);
+    render(++i, total, benefit, lot);
     return total + benefit;
   }, capital);
 }
@@ -41,7 +41,7 @@ function renderer (tbodyElement, rateContainer, benefit_ratio) {
   return (index, total, benefit, lot) => {
     row = document.createElement('tr');
     row.innerHTML = `
-      <td>${index}</td>
+      <td><small>${index}</small></td>
       <td>¥${total.toLocaleString()}</td>
       <td>¥${benefit.toLocaleString()}</td>
       <td title="${Math.round(lot*100000)}">${lot.toFixed(2)}</td>
