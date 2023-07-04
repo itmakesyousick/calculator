@@ -1,13 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Zen+Kaku+Gothic+New:wght@400;500&display=swap');
 
+* {
+  box-sizing: border-box;
+}
 body {
   font-family: 'Zen Kaku Gothic New', sans-serif;
   font-size: 14px;
   line-height: 1.5;
-}
-
-.form {
-  padding: 0 0 16px;
 }
 table {
   border: solid #ddd;
@@ -29,7 +28,8 @@ td {
   text-align: right;
   font-family: 'Source Code Pro', monospace;
 }
-input[type="text"] {
+input[type="text"], select {
+  height: 26px;
   padding: 0 8px;
   font-size: 14px;
   line-height: 22px;
@@ -37,6 +37,14 @@ input[type="text"] {
   border: 1px solid #aaa;
   outline: 0;
   font-family: 'Source Code Pro', monospace;
+}
+.form {
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 0 0 16px;
+}
+.form-input {
+  
 }
 #rate-number {
   font-family: 'Source Code Pro', monospace;
