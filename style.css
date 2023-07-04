@@ -42,9 +42,19 @@ input[type="text"], select {
   display: flex;
   flex-flow: row nowrap;
   padding: 0 0 16px;
+  gap: 8px;
 }
 .form-input {
   
+}
+.form-input:first-of-type input {
+  width: 100px;
+}
+.form-input:nth-of-type select {
+  
+}
+.form-input:nth-of-type(3) input {
+  width: 30px;
 }
 #rate-number {
   font-family: 'Source Code Pro', monospace;
