@@ -48,13 +48,13 @@ input[type="text"], select {
   
 }
 .form-input:first-of-type input {
-  width: 100px;
+  width: 7em;
 }
 .form-input:nth-of-type select {
   
 }
 .form-input:nth-of-type(3) input {
-  width: 30px;
+  width: 3em;
 }
 #rate-number {
   font-family: 'Source Code Pro', monospace;
