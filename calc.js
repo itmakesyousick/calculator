@@ -1,6 +1,7 @@
 console.clear();
 const inputCapital = document.getElementById('capital');
 const inputRate = document.getElementById('rate');
+const inputCuota = document.getElementById('quota');
 const tbodyElement = document.getElementsByTagName('tbody')[0];
 const rateElement = document.getElementById('rate-number');
 
@@ -20,7 +21,7 @@ calc();
 
 function calc () {
   const days = 100;
-  const quata_pips = 30
+  const quata_pips = Number(inputCuota.value);
   const capital = Number(inputCapital.value);
   const benefit_ratio = Number(inputRate.value);
   const render = renderer(tbodyElement, rateElement, benefit_ratio); 
@@ -45,7 +46,7 @@ function renderer (tbodyElement, rateContainer, benefit_ratio) {
       <td><small>${index}</small></td>
       <td>¥${total.toLocaleString()}</td>
       <td>¥${benefit.toLocaleString()}</td>
-      <td title="${Math.round(lot*100000)}">${lot.toFixed(2)}</td>
+      <td title="${Math.round(lot*100000)}">${lot.toFixed(2)} ・ ${Math.round(lot*100000)}</td>
     `;
     tbodyElement.appendChild(row);
   }
