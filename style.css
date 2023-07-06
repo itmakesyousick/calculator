@@ -28,8 +28,8 @@ td {
   text-align: right;
   font-family: 'Source Code Pro', monospace;
 }
-tr:nth-of-type(10n) th,
-tr:nth-of-type(10n) td {
+tr:nth-of-type(10n + 1) th,
+tr:nth-of-type(10n + 1) td {
   border-top-width: 2px;
 }
 input[type="text"], select {
