@@ -1,24 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Zen+Kaku+Gothic+New:wght@400;500&display=swap');
-
+:root {
+  --background-color: #fff;
+  --border-color: #ddd;
+  --th-background-color: #eee;
+  --font-color: #333;
+}
 * {
   box-sizing: border-box;
 }
 body {
+  background-color: var(--background-color);
   font-family: 'Zen Kaku Gothic New', sans-serif;
   font-size: 14px;
   line-height: 1.5;
+  color: var(--font-color);
 }
 table {
-  border: solid #ddd;
+  border: solid var(--border-color);
   border-width: 0 0 1px 1px;
 }
 th, td {
   padding: 8px 16px;
-  border: 1px solid #ddd;
+  border: 1px solid var(--border-color);
   border-width: 1px 1px 0 0;
 }
 th {
-  background: #eee;
+  background: var(--th-background-color);
 }
 th:first-of-type {
   font-family: 'Source Code Pro', monospace;
@@ -72,4 +79,13 @@ input[type="text"], select {
 }
 #rate-number::after {
   content: '）';
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #333;
+    --border-color: #666;
+    --th-background-color: #666;
+    --font-color: #fff;
+  }
 }
