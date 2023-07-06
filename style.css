@@ -28,6 +28,10 @@ td {
   text-align: right;
   font-family: 'Source Code Pro', monospace;
 }
+tr:nth-of-type(10n) th,
+tr:nth-of-type(10n) td {
+  border-top-width: 2px;
+}
 input[type="text"], select {
   height: 26px;
   padding: 0 8px;
