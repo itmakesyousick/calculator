@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Zen+Kaku+Gothic+New:wght@400;500&display=swap');
 :root {
   --background-color: #fff;
+  --font-color: #333;
   --border-color: #ddd;
   --th-background-color: #eee;
-  --font-color: #333;
+  --th-font-color: #333;
 }
 * {
   box-sizing: border-box;
@@ -26,6 +27,7 @@ th, td {
 }
 th {
   background: var(--th-background-color);
+  color: var(--th-font-color);
 }
 th:first-of-type {
   font-family: 'Source Code Pro', monospace;
@@ -84,8 +86,9 @@ input[type="text"], select {
 @media (prefers-color-scheme: dark) {
   :root {
     --background-color: #0c0e12;
+    --font-color: #fff;
     --border-color: #24292e;
     --th-background-color: #121519;
-    --font-color: #fff;
+    --th-font-color: #656379;
   }
 }
