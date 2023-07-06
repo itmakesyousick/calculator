@@ -47,7 +47,7 @@ function renderer (tbodyElement, rateContainer, benefit_ratio) {
       <td>¥${total.toLocaleString()}</td>
       <td>¥${benefit.toLocaleString()}</td>
       <td title="${Math.round(lot*100000)}">${lot.toFixed(2)} ・ ${Math.round(lot*100000)}</td>
-      <td>${(total - capital).toLocaleString()}</td>
+      <td>¥${(total - capital).toLocaleString()}</td>
     `;
     tbodyElement.appendChild(row);
   }
