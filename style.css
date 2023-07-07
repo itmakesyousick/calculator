@@ -42,7 +42,7 @@ tr:nth-of-type(10n + 1) td {
   border-top-width: 2px;
 }
 input[type="text"], select {
-  height: 26px;
+  height: 32px;
   padding: 0 8px;
   line-height: 22px;
   background: var(--background-color);
