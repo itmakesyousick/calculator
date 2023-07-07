@@ -44,12 +44,14 @@ tr:nth-of-type(10n + 1) td {
 input[type="text"], select {
   height: 26px;
   padding: 0 8px;
-  font-size: 14px;
   line-height: 22px;
+  background: var(--background-color);
   border-radius: 3px;
-  border: 1px solid #aaa;
+  border: 1px solid var(--border-color);
   outline: 0;
   font-family: 'Source Code Pro', monospace;
+  font-size: 14px;
+  color: var(--font-color);
 }
 .form {
   display: flex;
