@@ -45,8 +45,8 @@ td {
   text-align: right;
   font-family: 'Source Code Pro', monospace;
 }
-tr:nth-of-type(10n + 1) th,
-tr:nth-of-type(10n + 1) td {
+tr:nth-of-type(11n) th,
+tr:nth-of-type(11n) td {
   border-top-width: 3px;
 }
 input[type="text"], select {
