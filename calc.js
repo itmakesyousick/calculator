@@ -18,7 +18,7 @@ inputRate.addEventListener('input', () => {
 });
 
 inputQuota.addEventListener('input', () => {
-  if (/[0-9.]+/.test(inputRate.value)) {
+  if (/[0-9.]+/.test(inputQuota.value)) {
     calc();
   }
 });
