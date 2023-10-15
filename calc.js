@@ -1,7 +1,7 @@
 console.clear();
 const inputCapital = document.getElementById('capital');
 const inputRate = document.getElementById('rate');
-const inputCuota = document.getElementById('quota');
+const inputQuota = document.getElementById('quota');
 const tbodyElement = document.getElementsByTagName('tbody')[0];
 const rateElement = document.getElementById('rate-number');
 
@@ -21,7 +21,7 @@ calc();
 
 function calc () {
   const days = 100;
-  const quata_pips = Number(inputCuota.value);
+  const quata_pips = Number(inputQuota.value);
   const initialCapital = Number(inputCapital.value);
   const benefit_ratio = Number(inputRate.value);
   const render = renderer(tbodyElement, rateElement, benefit_ratio); 
